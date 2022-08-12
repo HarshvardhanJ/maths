@@ -6,7 +6,7 @@ This sub-section expansions/solutions to functions.
 
 **Graph:**
 
-[![Graph of e^x](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Exp.svg/1600px-Exp.svg.png)]
+![Graph of e^x](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Exp.svg/1600px-Exp.svg.png)
 
 Denoted by: $f(x)=/exp(x)$ or $e^x$
 Domain: $\mathbb {C}$
@@ -56,7 +56,7 @@ which, along with the definition {\displaystyle e=\exp(1)}, shows that ${\displa
 
 $${\displaystyle {\frac {d}{dx}}e^{x}=e^{x}\ln(e)=e^{x}.}$$
 
-[![Exp-series.gif](https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Exp_series.gif/220px-Exp_series.gif)]
+![Exp-series.gif](https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Exp_series.gif/220px-Exp_series.gif)
 
 > The exponential function (in blue), and the sum of the first $n + 1$ terms of its power series (in red).
 
