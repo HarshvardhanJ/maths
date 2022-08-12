@@ -8,12 +8,13 @@ This sub-section expansions/solutions to functions.
 
 ![Graph of e^x](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Exp.svg/1600px-Exp.svg.png)
 
-Denoted by: $f(x)=/exp(x)$ or $e^x$
-Domain: $\mathbb {C}$
-Derivative: ${\displaystyle \exp 'x=\exp x}$
+**Denoted by**: $f(x)=\exp(x)$ or $e^x$
 
+**Domain**: $\mathbb {C}$
 
-Series definition: ${\displaystyle \exp x=\sum_{n=0}^{\infty }{\frac {x^{n}}{n!}}}$
+**Derivative**: ${\displaystyle \exp 'x=\exp x}$
+
+**Series definition**: ${\displaystyle \exp x=\sum_{n=0}^{\infty }{\frac {x^{n}}{n!}}}$
 
 **Implementation**
 
