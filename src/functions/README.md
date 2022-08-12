@@ -57,7 +57,9 @@ which, along with the definition {\displaystyle e=\exp(1)}, shows that ${\displa
 
 $${\displaystyle {\frac {d}{dx}}e^{x}=e^{x}\ln(e)=e^{x}.}$$
 
-<div style="text-align:center"><img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Exp_series.gif/220px-Exp_series.gif" alt = "Exp-series GIF"></div>
+<p align="center" width="100%">
+    <img width="33%" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Exp_series.gif/220px-Exp_series.gif" alt = "Exp series GIF">
+</p>
 
 > The exponential function (in blue), and the sum of the first $n + 1$ terms of its power series (in red).
 
