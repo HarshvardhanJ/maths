@@ -20,6 +20,7 @@ Series definition: ${\displaystyle \exp x=\sum_{n=0}^{\infty }{\frac {x^{n}}{n!}
 - Python
 
 ```py
+# ./exp.py
 def exp(x):
     sum = 0.0
     times = 100.0
@@ -72,6 +73,7 @@ $${\displaystyle \exp x=\lim _{n\to \infty }\left(1+{\frac {x}{n}}\right)^{n}.}$
 - Python
 
 ```py
+# ./exp1.py
 def exp(x):
     n = 2147483647 # max value of integer, we'll treat this as infinity.
     sum = math.pow((1 + x/n), n)
@@ -81,6 +83,7 @@ def exp(x):
 - Golang
 
 ```go
+// ./exp1.go
 func exp(x float64) float64 {
     n := 2147483647.0 // highest value of float64
     sum := math.Pow((1 + x/n), n)
