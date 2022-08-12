@@ -19,6 +19,7 @@ $$ {\displaystyle \pi =\sum_{k=0}^{\infty}{\frac {1}{16^{k}}}\left({\frac {4}{8k
 1. Python
 
 ```py
+# ./pi.py
 import math
 
 def main():
@@ -42,6 +43,7 @@ if __name__ == "__main__":
 2. Golang
 
 ```go
+// ./pi.go
 func main() {
     // driver code
     fmt.Println(bbp())
@@ -70,6 +72,7 @@ $$\displaystyle c={\frac {1}{\sqrt{\varepsilon _{0}\mu _{0}}}\.}$$
 1. Python
 
 ```py
+# ./light_speed.py
 import math
 
 def main():
@@ -86,6 +89,7 @@ if __name__ == "__main__":
 2. Golang
 
 ```go
+// ./light_speed.go
 func main() {
     u_0 := 4*math.Pi*math.Pow(10, -7)
     e_0 := 8.8541878128 * math.Pow(10, -12)
