@@ -3,14 +3,17 @@ package main
 import (
     "math"
     "fmt"
-    "example.com/helper"
 )
 
 func main() {
     // driver code
-    x := sin(math.Pi/3)
-    y := cos(math.Pi/3)  
-    fmt.Println(helper.Pow(x, 2) + helper.Pow(y, 2))
+    x := math.Pi/3
+    fmt.Println(sin(x))
+    fmt.Println(cos(x))
+    fmt.Println(tan(x))
+    fmt.Println(cot(x))
+    fmt.Println(cosec(x))
+    fmt.Println(sec(x))
 }
 
 func sin(x float64) float64 {
@@ -31,6 +34,22 @@ func cos(x float64) float64 {
         sum += re*y
     }
     return sum
+}
+
+func tan(x float64) float64 {
+    return sin(x)/cos(x)
+}
+
+func cot(x float64) float64 {
+    return cos(x)/sin(x)
+}
+
+func cosec(x float64) float64 {
+    return 1/sin(x)
+}
+
+func sec(x float64) float64 {
+    return 1/cos(x)
 }
 
 func Factorial(n float64) float64 {
