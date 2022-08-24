@@ -97,14 +97,3 @@ func main() {
     fmt.Println(c) // => 2.997924580816064e+08
 }
 ```
-
-### Natural log of 2
-
-The decimal value of the [natural logarithm](https://en.m.wikipedia.org/wiki/Natural_logarithm) of 2 (sequence [A002162](https://oeis.org/A002162) in the [OEIS](https://en.m.wikipedia.org/wiki/On-Line_Encyclopedia_of_Integer_Sequences)) is approximately
-
-$${\displaystyle \ln 2\approx 0.693\,147\,180\,559\,945\,309\,417\,232\,121\,458.}$$
-
-**Series expansion:**
-
-$${\displaystyle \ln 2=\sum _{n=1}^{\infty }{\frac {(-1)^{n+1}}{n}}=1-{\frac {1}{2}}+{\frac {1}{3}}-{\frac {1}{4}}+{\frac {1}{5}}-{\frac {1}{6}}+\cdots }$$
-
