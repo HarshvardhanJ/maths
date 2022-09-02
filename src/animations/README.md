@@ -6,14 +6,14 @@ This sub-section contains some beautiful animations made with maths and code.
 
 A Lissajous curve, also known as Lissajous figure or Bowditch curve, is the graph of a system of parametric equations.
 
-$${\displaystyle x=A\sin(at+\delta ),\quad y=B\sin(bt),}x=A\sin(at+\delta ),\quad y=B\sin(bt),$$
+$${\displaystyle x=A\sin(at+\delta ),\quad y=B\sin(bt),}$$
 
 which describe [complex harmonic motion](https://en.m.wikipedia.org/wiki/Complex_harmonic_motion). This family of [curves](https://en.m.wikipedia.org/wiki/Curve) was investigated by Nathaniel Bowditch in 1815, and later in more detail in 1857 by Jules Antoine Lissajous (for whom it has been named).
 
 **Code**:
 
 ```go
-./lissajous.go
+// ./lissajous.go
 // Lissajous generates GIF animations of random Lissajous figures.
 
 package main
