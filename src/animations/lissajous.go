@@ -20,16 +20,15 @@ const (
 )
 
 func main() {
-    // TODO: Exercise 1.5
     lissajous(os.Stdout)
 }
 
 func lissajous(out io.Writer) {
     const (
         // number of complete oscillator revolutions
-        cycles  = 10 // 5
+        cycles  = 5
         res     = 0.001 // angular resolution
-        size    = 150 // image canvas covers (100)
+        size    = 100 // image canvas covers
         // [-size...+size]
         nframes = 64 // no. of animation frames
         delay   = 8 // delay b/w frames in 10ms units
