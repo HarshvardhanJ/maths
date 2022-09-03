@@ -4,7 +4,7 @@ This sub-section contains some beautiful animations made with maths and code.
 
 ## Lissajous
 
-A Lissajous curve, also known as Lissajous figure or Bowditch curve, is the graph of a system of parametric equations.
+A Lissajous curve, also known as Lissajous figure or Bowditch curve, is the graph of a system of parametric equations
 
 $${\displaystyle x=A\sin(at+\delta ),\quad y=B\sin(bt),}$$
 
