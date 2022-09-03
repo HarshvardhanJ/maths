@@ -5,11 +5,14 @@ package main
 import (
     "io"
     "os"
+    "log"
+    "time"
     "image"
     "image/color"
     "image/gif"
     "math"
     "math/rand"
+    "net/http"
 )
 
 var pallete = []color.Color{color.White, color.Black}
@@ -20,6 +23,16 @@ const (
 )
 
 func main() {
+    // seeding randomness
+    rand.Seed(time.Now().UTC().UnixNano())
+    // rendering figure on web-page
+    if len(os.Args) > 1 && os.Args[1] == "web" {
+        http.HandleFunc("/", handler)
+        log.Fatal(
+          http.ListenAndServe("localhost:8000", nil),
+        )
+        return
+    }
     lissajous(os.Stdout)
 }
 
@@ -55,4 +68,8 @@ func lissajous(out io.Writer) {
     }
     gif.EncodeAll(out, &anim)
     // NOTE: ignoring encoding errors
+}
+
+func handler(w http.ResponseWriter, r *http.Request){
+    lissajous(w)
 }

@@ -21,6 +21,7 @@ package main
 import (
     "io"
     "os"
+    "time"
     "image"
     "image/color"
     "image/gif"
@@ -36,7 +37,7 @@ const (
 )
 
 func main() {
-    // TODO: Exercise 1.5
+    rand.Seed(time.Now().UTC().UnixNano())
     lissajous(os.Stdout)
 }
 
@@ -78,6 +79,26 @@ func lissajous(out io.Writer) {
 **Output**:
 
 ![Lissajous GIF](lissajous_out.gif)
+> Note: This program creates random figures, above one is one of them.
+
+**Rendering on webpage**
+
+```go
+if len(os.Args) > 1 && os.Args[1] == "web" {
+	handler := func(w http.ResponseWriter, r *http.Request) {
+		lissajous(w)
+	}
+	http.HandleFunc("/", handler)
+	log.Fatal(http.ListenAndServe("localhost:8000", nil))
+	return
+```
+Run the program with argument "web", and visit
+`localhost:8000` to see the figures. *Reload the page for randomness.*
+
+Usage:
+```bash
+./lissajous web
+```
 
 **Modifying**:
 
