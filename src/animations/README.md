@@ -78,6 +78,12 @@ func lissajous(out io.Writer) {
 
 **Output**:
 
+Usage:
+```bash
+go build lissajous.go
+./lissajous > out.gif
+```
+
 ![Lissajous GIF](lissajous_out.gif)
 > Note: This program creates random figures, above one is one of them.
 
