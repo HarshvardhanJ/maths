@@ -11,8 +11,7 @@ Printing out all the factors of the given number.
 - Python
 
 ```py
-./factor.py
-
+# ./factor.py
 
 #!/usr/bin/env python3
 import sys
@@ -67,8 +66,7 @@ if __name__ == "__main__":
 - Golang
 
 ```go
-./factor.go
-
+// ./factor.go
 
 package main
 
