@@ -7,6 +7,7 @@ This repo is a part of my main repo [`notes`](https://github.com/Sarthak2143/not
 ## Categories
 
 - [Approximations](src/approximations)
+- [Conjectures](src/conjectures)
 - [Functions](src/functions)
 - [Animations](src/animations)
 - [Infinte Series](src/infinite_series)
