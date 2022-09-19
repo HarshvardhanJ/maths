@@ -27,6 +27,7 @@ func main() {
     rand.Seed(time.Now().UTC().UnixNano())
     // rendering figure on web-page
     if len(os.Args) > 1 && os.Args[1] == "web" {
+        // Usage: ./lissajous web
         http.HandleFunc("/", handler)
         log.Fatal(
           http.ListenAndServe("localhost:8000", nil),
