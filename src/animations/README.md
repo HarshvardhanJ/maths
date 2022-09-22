@@ -84,7 +84,7 @@ go build lissajous.go
 ./lissajous > out.gif
 ```
 
-![Lissajous GIF](lissajous_out.gif)
+![Lissajous GIF](output/lissajous_out.gif)
 > Note: This program creates random figures, above one is one of them.
 
 **Rendering on webpage**
@@ -120,5 +120,103 @@ const (
     delay   = 8 // delay b/w frames in 10ms units
 )
 ```
+
+## Rose petals
+
+In mathematics, a rose or rhodonea curve is a sinusoid specified by either the cosine or sine functions with no phase angle that is plotted in polar coordinates. Rose curves or "rhodonea" were named by the Italian mathematician who studied them, Guido Grandi, between the years 1723 and 1728.
+
+A rose is the set of points in polar coordinates specified by the [polar equation](https://en.m.wikipedia.org/wiki/Polar_equation)
+
+$${\displaystyle r=a\cos(k\theta )}$$
+
+or in Cartesian coordinates using the parametric equations
+
+$${\displaystyle x=r\cos(\theta )=a\cos(k\theta )\cos(\theta )}$$
+$${\displaystyle y=r\sin(\theta )=a\cos(k\theta )\sin(\theta )}$$.
+
+**Implementation**
+
+We can use mostly all of the code from the above program [lissajous](#lissajous) and just modify the equations.
+
+```go
+x := math.Cos(t*freq) * math.Cos(t)
+y := math.Cos(t*freq) * math.Sin(t)
+```
+
+**Ouput**
+
+![Rose Petals GIF I](output/rose_out1.gif)
+![Rose Petals GIF II](output/rose_out2.gif)
+
+**Scaling (Horizantally)**
+
+Scale the *x coordinate* with variable `a`.
+Scaling depends on `a`, try to experiment it yourself.
+
+```go
+// ...
+phase := 0.5 // phase difference
+a := 0.5 // <- to be noted
+
+for i := 0; i < nframes; i++ {
+    rect := image.Rect(0, 0, 2*size+1, 2*size+1)
+    img := image.NewPaletted(rect, pallete)
+    a += 0.5 // <- to be noted
+
+    for t := 0.0; t < cycles*2*math.Pi; t += res {
+        // equations:
+        x := a*math.Cos(t*freq) * math.Cos(t)
+        y := math.Cos(t*freq) * math.Sin(t)
+        // ...
+```
+
+![Rose Horiazantally scaled](output/rose_horizantal.gif)
+
+**Scaling (Vertically)**
+
+Scale the *y coordinate* with variable `a`.
+Scaling depends on `a`, try to experiment it yourself.
+```go
+// ...
+phase := 0.5 // phase difference
+a := 0.5 // <- to be noted
+
+for i := 0; i < nframes; i++ {
+    rect := image.Rect(0, 0, 2*size+1, 2*size+1)
+    img := image.NewPaletted(rect, pallete)
+    a += 0.5 // <- to be noted
+
+    for t := 0.0; t < cycles*2*math.Pi; t += res {
+        // equations:
+        x := math.Cos(t*freq) * math.Cos(t)
+        y := a*math.Cos(t*freq) * math.Sin(t)
+        // ...
+```
+
+![Rose Vertically Scaled](output/rose_vertical.gif)
+
+**Zooming In**
+
+Scale the *x and y coordinate* with variable `a`.
+Scaling depends on `a`, try to experiment it yourself.
+
+```go
+// ...
+phase := 0.5 // phase difference
+a := 0.5 // <- to be noted
+
+for i := 0; i < nframes; i++ {
+    rect := image.Rect(0, 0, 2*size+1, 2*size+1)
+    img := image.NewPaletted(rect, pallete)
+    a += 0.5 // <- to be noted
+
+    for t := 0.0; t < cycles*2*math.Pi; t += res {
+        // equations:
+        x := a*math.Cos(t*freq) * math.Cos(t)
+        y := a*math.Cos(t*freq) * math.Sin(t)
+        // ...
+```
+
+![Rose Zoomed in](output/rose_zoomed.gif)
 
 ---
