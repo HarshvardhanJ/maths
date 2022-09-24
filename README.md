@@ -6,10 +6,10 @@ This repo is a part of my main repo [`notes`](https://github.com/Sarthak2143/not
 
 ## Categories
 
+- [Animations](src/animations)
 - [Approximations](src/approximations)
 - [Conjectures](src/conjectures)
 - [Functions](src/functions)
-- [Animations](src/animations)
 - [Infinte Series](src/infinite_series)
 - [Prime Numbers](src/prime_numbers)
 - [Learn](src/learn)
