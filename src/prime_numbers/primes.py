@@ -3,7 +3,7 @@ import math
 def main():
     x = 20
     data = send_fib(x)
-    hash = {} # hashmap
+    hash = {} # hash-map-uh
     i = 0
     while i < len(data):
         hash[data[i]] = isPrime(data[i])
