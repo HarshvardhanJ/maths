@@ -10,7 +10,7 @@ $${\displaystyle x=A\sin(at+\delta ),\quad y=B\sin(bt),}$$
 
 which describe [complex harmonic motion](https://en.m.wikipedia.org/wiki/Complex_harmonic_motion). This family of [curves](https://en.m.wikipedia.org/wiki/Curve) was investigated by Nathaniel Bowditch in 1815, and later in more detail in 1857 by Jules Antoine Lissajous (for whom it has been named).
 
-**Code**:
+### Code
 
 ```go
 // ./lissajous.go
@@ -76,7 +76,7 @@ func lissajous(out io.Writer) {
 }
 ```
 
-**Output**:
+#### Output:
 
 Usage:
 ```bash
@@ -87,7 +87,7 @@ go build lissajous.go
 ![Lissajous GIF](output/lissajous_out.gif)
 > Note: This program creates random figures, above one is one of them.
 
-**Rendering on webpage**
+#### Rendering on webpage
 
 ```go
 if len(os.Args) > 1 && os.Args[1] == "web" {
@@ -106,7 +106,7 @@ Usage:
 ./lissajous web
 ```
 
-**Modifying**:
+#### Modifying:
 
 For changing number of cycles, resolution, size, number of frames or delay b/w frames you can change these constants.
 ```go
@@ -134,7 +134,7 @@ or in Cartesian coordinates using the parametric equations
 $${\displaystyle x=r\cos(\theta )=a\cos(k\theta )\cos(\theta )}$$
 $${\displaystyle y=r\sin(\theta )=a\cos(k\theta )\sin(\theta )}$$.
 
-**Implementation**
+### Implementation
 
 We can use mostly all of the code from the above program [lissajous](#lissajous) and just modify the equations.
 
@@ -143,12 +143,12 @@ x := math.Cos(t*freq) * math.Cos(t)
 y := math.Cos(t*freq) * math.Sin(t)
 ```
 
-**Ouput**
+#### Ouput
 
 ![Rose Petals GIF I](output/rose_out1.gif)
 ![Rose Petals GIF II](output/rose_out2.gif)
 
-**Scaling (Horizantally)**
+#### Scaling (Horizantally)
 
 Scale the *x coordinate* with variable `a`.
 Scaling depends on `a`, try to experiment it yourself.
@@ -172,7 +172,7 @@ for i := 0; i < nframes; i++ {
 
 ![Rose Horiazantally scaled](output/rose_horizantal.gif)
 
-**Scaling (Vertically)**
+#### Scaling (Vertically)
 
 Scale the *y coordinate* with variable `a`.
 Scaling depends on `a`, try to experiment it yourself.
@@ -195,7 +195,7 @@ for i := 0; i < nframes; i++ {
 
 ![Rose Vertically Scaled](output/rose_vertical.gif)
 
-**Zooming In**
+#### Zooming In
 
 Scale the *x and y coordinate* with variable `a`.
 Scaling depends on `a`, try to experiment it yourself.
