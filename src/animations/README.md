@@ -76,7 +76,7 @@ func lissajous(out io.Writer) {
 }
 ```
 
-#### Output:
+#### Output
 
 Usage:
 ```bash
@@ -106,7 +106,7 @@ Usage:
 ./lissajous web
 ```
 
-#### Modifying:
+#### Modifying
 
 For changing number of cycles, resolution, size, number of frames or delay b/w frames you can change these constants.
 ```go
