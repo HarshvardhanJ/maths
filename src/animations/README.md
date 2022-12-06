@@ -132,7 +132,7 @@ $${\displaystyle r=a\cos(k\theta )}$$
 or in Cartesian coordinates using the parametric equations
 
 $${\displaystyle x=r\cos(\theta )=a\cos(k\theta )\cos(\theta )}$$
-$${\displaystyle y=r\sin(\theta )=a\cos(k\theta )\sin(\theta )}$$.
+$${\displaystyle y=r\sin(\theta )=a\cos(k\theta )\sin(\theta )}$$
 
 ### Implementation
 
